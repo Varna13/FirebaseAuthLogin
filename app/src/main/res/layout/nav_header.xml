@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    android:layout_gravity="start">
+    
+    <ImageView
+        android:id="@+id/ivicon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/loginapp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="loginapp@gmail.com"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/pink"
+        app:layout_constraintTop_toBottomOf="@id/ivicon"
+        app:layout_constraintStart_toStartOf="@id/ivicon"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
